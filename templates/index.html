@@ -1,0 +1,14 @@
+{% extends "bootstrap/base.html" %}
+
+{% block title %}Game Design Patterns{% endblock %}
+
+<h1> Game Design Patterns </h1>
+
+{% block content %}
+<ul class="collection with-header">
+    {% for key, value in targets.items() %}
+    <li class="collection-item"><a href="{{ value }}">{{ key }}</a></li>
+   {% endfor %}
+
+</ul>
+{% endblock %}
