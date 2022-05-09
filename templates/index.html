@@ -5,6 +5,12 @@
 <h1> Game Design Patterns </h1>
 
 {% block content %}
+
+<p class="lead">
+    Here, you get 3 random game design patterns from the<a href="http://www.gameplaydesignpatterns.org/"> project 400 </a>.
+    Your task is to think of a game that uses these three game design patterns.
+</p>
+
 <ul class="collection with-header">
     {% for key, value in targets.items() %}
     <li class="collection-item"><a href="{{ value }}">{{ key }}</a></li>
